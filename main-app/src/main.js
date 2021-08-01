@@ -18,10 +18,23 @@ new Vue({
 
 registerMicroApps([
   {
-    name: "productManagement",
-    entry: "//localhost:9000",
+    name: "projectManagement",
+    entry:
+      process.env.NODE_ENV === "production"
+        ? "/projectManagement/"
+        : "//localhost:9000/projectManagement/",
     container: "#project_management_container",
     activeRule: "/appIndex/develop/projectManagement",
+  },
+  {
+    name: "productTree",
+    // entry:
+    //   process.env.NODE_ENV === "production"
+    //     ? "/productTree/"
+    //     : "//localhost:9001/productTree/",
+    entry: '/productTree/',
+    container: "#product_tree_container",
+    activeRule: "/appIndex/develop/productTree",
   },
 ]);
 // 启动 qiankun

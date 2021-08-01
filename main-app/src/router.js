@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Index from "./views/Index.vue";
 import ProjectManagement from "./views/ProjectManagement.vue";
+import ProductTree from "./views/ProductTree.vue";
 import Develop from "./views/Develop.vue";
 
 Vue.use(Router);
@@ -45,6 +46,11 @@ const router = new Router({
             {
               path: "productTree",
               name: "ProductTree",
+              component: ProductTree,
+            },
+            {
+              path: "productTree/*",
+              component: ProductTree,
             },
           ],
         },

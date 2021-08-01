@@ -6,7 +6,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: window.__POWERED_BY_QIANKUN__ ? '/appIndex/develop/projectManagement/' : '/projectManagement/',
+  base: window.__POWERED_BY_QIANKUN__ ? '/appIndex/develop/productTree/' : '/productTree/',
   routes: [
     {
       path: '/',

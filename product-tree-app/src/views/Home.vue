@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>项目管理</h1>
+    <h1>产品信息树</h1>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>

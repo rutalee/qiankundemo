@@ -1,12 +1,12 @@
 const { name } = require("./package");
 module.exports = {
-  publicPath: "/projectManagement/",
-  outputDir: "../main-app/WiseDevOps/projectManagement",
+  publicPath: "/productTree/",
+  outputDir: "../main-app/WiseDevOps/productTree",
   devServer: {
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
-    port: 9000,
+    port: 9001,
   },
   configureWebpack: {
     output: {
